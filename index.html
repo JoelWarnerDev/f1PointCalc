@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>F1 Wind Tunnel | Predict</title>
+  <meta name="description" content="F1 Fantasy Predictorator">
+  <meta name="author" content="PhoenixFlaccus">
+  <meta name="viewport" content="width=device-width", initial-scale="1">
+  <link rel="icon" type="image/png" href="img/icon_sl.png">
+  <script src="calculateScore.js" charset="utf-8"> </script>
+  
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li>Predict</li>
+        <li>Stats</li>
+        <li><a href="team.html" target="_self">Team Building</a></li>
+        <li><a href="donate.html" target="_self">Donate</a></li> <!--target ="_blank" to open link in a new tab-->
+      </ul>
+    </nav>
+    <hr> <!--makes a line-->
+    <h1>Enter driver predictions!</h1>
+    <hr>
+  </header>
+
+
+  <h2>Enter 21 for DNF and 22 for disqualification</h2>
+  <div>
+    <form id="predictionsForm">
+      <div>
+          <label for="qualifyPos">Qualifying Position:</label>
+          <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos"/>
+      </div>
+      <div>
+          <label for ="teammateQuali">Out-qualified teammate?</label>  
+          <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
+      </div>
+      <div>
+          <label for="finishPos">Finishing Position:</label>
+          <input required name="finishPos" type="number" min="1" max="22" id="finishPos"/>
+      </div>
+      <div>
+          <label for ="teammateRace">Beat teammate?</label>  
+          <input name="teammateRace" type="checkbox" id="teammateRace"/>
+      </div>
+    </form>  
+  </div>
+  <br>
+  <button onclick="driverPoints()">AWAY WE GO!</button>
+
+  <p id="points"></p>
+    
+  <footer>
+    <hr>
+    <ul>
+      <li>Git</li>
+      <li>Twitter</li>
+      <li>F1 Fantasy Tracker</li>
+    </ul>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+Qualifying
+Q1 Finish 1 pt
+Q2 Finish 2 pts
+Q3 Finish 3 pts
+Qualified ahead of team mate (driver only) 2 pts
+Did not qualify (driver only) -5 pts
+Disqualification from qualifying (driver only) -10 pts
+Qualifying Position Bonuses
+Pole position 10 pts
+2nd place 9 pts
+3rd place 8 pts
+4th place 7 pts
+5th place 6 pts
+6th place 5 pts
+7th place 4 pts
+8th place 3 pts
+9th place 2 pts
+10th place 1 pt
+Race
+Finished Race 1 pt
+Finished race, position gained (per place gained, max. +10 pts) 2 pts
+Finished ahead of team mate (driver only) 3 pts
+Fastest lap (driver only) 5 pts
+Started race within Top 10, finished race but lost position (per place lost, max. -10 pts) -2 pts
+Started race outside Top 10, finished race but lost position (per place lost, max. -5 pts) -1 pt
+Not classified (driver only) -15 pts
+Disqualification from race (driver only) -20 pts
+
+* Positions Gained: Positions gained are based on the position a driver starts on the grid
+
+** Classification: Cars that have covered 90% of the number of laps covered by the winner (rounded down to the nears whole number of laps) will be deemed to have finished the race. 
+Cars that have covered less than 90% of the number of laps covered by the winner (rounded down to the nearest whole number of laps), will not be classified. Classifications are based on FIA decisions
+Finishing Position Bonuses
+1st position 25 pts
+2nd place 18 pts
+3rd place 15 pts
+4th place 12 pts
+5th place 10 pts
+6th place 8 pts
+7th place 6 pts
+8th place 4 pts
+9th place 2 pts
+10th place 1 pt
+Streaks
+Driver Qualifying - driver qualifies in Top 10 for 5 races in a row 5 pts
+Driver Race - driver finishes race in Top 10 for 5 races in a row 10 pts
+Constructor Qualifying - both drivers qualify in Top 10 for 3 races in a row 5 pts
+Constructor Race - both drivers finish race in Top 10 for 3 races in a row 10 pts 
