@@ -9,144 +9,150 @@
   <meta name="author" content="PhoenixFlaccus">
   <meta name="viewport" content="width=device-width", initial-scale="1">
   <link rel="icon" type="image/png" href="img/icon_sl.png">
-  <script src="calculateScore.js" charset="utf-8"> </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="calculateTeamScore.js" charset="utf-8"> </script>
   
 </head>
 <header>
     <nav>
+        <div>
       <ul>
-        <li>Predict</li>
-        <li>Stats</li>
-        <li><a href="team.html" target="_self">Team Building</a></li>
+        <li><a href="index.html" target="_self">Home</a></li>
+        <li><a href="donate.html" target="_self">Stats</a></li>
+        <li><a href="team.html" target="_self">Team Predict</a></li>
         <li><a href="donate.html" target="_self">Donate</a></li> 
       </ul>
-    </nav>
+       </div>
+    </nav> 
     <hr> 
     <br>
   </header>
 <body>
+    <div class="calcGrid">
+        <div>
+            <form id="predictionsForm1">
+                <header>Driver 1</header>
+                <div>
+                    <label for="qualifyPos">Qualifying Position:</label>
+                    <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos" value="1" inputmode="numeric" pattern="[0-9]*" />
+                </div>
+                <div>
+                    <label for ="teammateQuali">Out-qualified teammate?</label>  
+                    <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
+                </div>
+                <div>
+                    <label for="finishPos">Finishing Position:</label>
+                    <input required name="finishPos" type="number" min="1" max="22" id="finishPos" value="1" inputmode="numeric" pattern="[0-9]*"/>
+                </div>
+                <div>
+                    <label for ="teammateRace">Beat teammate?</label>  
+                    <input name="teammateRace" type="checkbox" id="teammateRace"/>
+                </div>
+                </form>  
+                <br>
+
+        </div>
+
+        <div>
+            <form id="predictionsForm2">
+                <header>Driver 2</header>
+                <div>
+                    <label for="qualifyPos">Qualifying Position:</label>
+                    <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos" value="2" inputmode="numeric" pattern="[0-9]*"/>
+                </div>
+                <div>
+                    <label for ="teammateQuali">Out-qualified teammate?</label>  
+                    <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
+                </div>
+                <div>
+                    <label for="finishPos">Finishing Position:</label>
+                    <input required name="finishPos" type="number" min="1" max="22" id="finishPos" value="2" inputmode="numeric" pattern="[0-9]*"/>
+                </div>
+                <div>
+                    <label for ="teammateRace">Beat teammate?</label>  
+                    <input name="teammateRace" type="checkbox" id="teammateRace"/>
+                </div>
+            </form>  
+            <br>
+        </div>
+
+        <div>
+            <form id="predictionsForm3">
+                <header>Driver 3</header>
+                <div>
+                    <label for="qualifyPos">Qualifying Position:</label>
+                    <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos" value="3" inputmode="numeric" pattern="[0-9]*"/>
+                </div>
+                <div>
+                    <label for ="teammateQuali">Out-qualified teammate?</label>  
+                    <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
+                </div>
+                <div>
+                    <label for="finishPos">Finishing Position:</label>
+                    <input required name="finishPos" type="number" min="1" max="22" id="finishPos" value="3" inputmode="numeric" pattern="[0-9]*"/>
+                </div>
+                <div>
+                    <label for ="teammateRace">Beat teammate?</label>  
+                    <input name="teammateRace" type="checkbox" id="teammateRace"/>
+                </div>
+            </form>  
+            <br>
+        </div>
+
+        <div>
+            <form id="predictionsForm4">
+                <header>Driver 4</header>
+                <div>
+                    <label for="qualifyPos">Qualifying Position:</label>
+                    <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos" value="4" inputmode="numeric" pattern="[0-9]*"/>
+                </div>
+                <div>
+                    <label for ="teammateQuali">Out-qualified teammate?</label>  
+                    <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
+                </div>
+                <div>
+                    <label for="finishPos">Finishing Position:</label>
+                    <input required name="finishPos" type="number" min="1" max="22" id="finishPos" value="4" inputmode="numeric" pattern="[0-9]*"/>
+                </div>
+                <div>
+                    <label for ="teammateRace">Beat teammate?</label>  
+                    <input name="teammateRace" type="checkbox" id="teammateRace"/>
+                </div>
+            </form>  
+            <br>
+        </div>
+
+        <div>
+            <form id="predictionsForm5">
+                <header>Driver 5</header>
+                <div>
+                    <label for="qualifyPos">Qualifying Position:</label>
+                    <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos" value="5" inputmode="numeric" pattern="[0-9]*"/>
+                </div>
+                <div>
+                    <label for ="teammateQuali">Out-qualified teammate?</label>  
+                    <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
+                </div>
+                <div>
+                    <label for="finishPos">Finishing Position:</label>
+                    <input required name="finishPos" type="number" min="1" max="22" id="finishPos" value="5" inputmode="numeric" pattern="[0-9]*"/>
+                </div>
+                <div>
+                    <label for ="teammateRace">Beat teammate?</label>  
+                    <input name="teammateRace" type="checkbox" id="teammateRace"/>
+                </div>
+
+            </form>  
+
+        </div>
+    </div>
+
+    <div class="results">
+        <button onclick="driverPoints()">AWAY WE GO!</button>
+    </div>
+
     <div>
-        <div>
-            <form id="predictionsForm">
-              <div>
-                  <label for="qualifyPos">Qualifying Position:</label>
-                  <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos"/>
-              </div>
-              <div>
-                  <label for ="teammateQuali">Out-qualified teammate?</label>  
-                  <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
-              </div>
-              <div>
-                  <label for="finishPos">Finishing Position:</label>
-                  <input required name="finishPos" type="number" min="1" max="22" id="finishPos"/>
-              </div>
-              <div>
-                  <label for ="teammateRace">Beat teammate?</label>  
-                  <input name="teammateRace" type="checkbox" id="teammateRace"/>
-              </div>
-            </form>  
-            <br>
-            <button onclick="driverPoints()">AWAY WE GO!</button>
-            <p id="points"></p>
-        </div>
-
-        <div>
-            <form id="predictionsForm">
-              <div>
-                  <label for="qualifyPos">Qualifying Position:</label>
-                  <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos"/>
-              </div>
-              <div>
-                  <label for ="teammateQuali">Out-qualified teammate?</label>  
-                  <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
-              </div>
-              <div>
-                  <label for="finishPos">Finishing Position:</label>
-                  <input required name="finishPos" type="number" min="1" max="22" id="finishPos"/>
-              </div>
-              <div>
-                  <label for ="teammateRace">Beat teammate?</label>  
-                  <input name="teammateRace" type="checkbox" id="teammateRace"/>
-              </div>
-            </form>  
-            <br>
-            <button onclick="driverPoints()">AWAY WE GO!</button>
-            <p id="points"></p>
-        </div>
-
-        <div>
-            <form id="predictionsForm">
-              <div>
-                  <label for="qualifyPos">Qualifying Position:</label>
-                  <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos"/>
-              </div>
-              <div>
-                  <label for ="teammateQuali">Out-qualified teammate?</label>  
-                  <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
-              </div>
-              <div>
-                  <label for="finishPos">Finishing Position:</label>
-                  <input required name="finishPos" type="number" min="1" max="22" id="finishPos"/>
-              </div>
-              <div>
-                  <label for ="teammateRace">Beat teammate?</label>  
-                  <input name="teammateRace" type="checkbox" id="teammateRace"/>
-              </div>
-            </form>  
-            <br>
-            <button onclick="driverPoints()">AWAY WE GO!</button>
-            <p id="points"></p>
-        </div>
-
-        <div>
-            <form id="predictionsForm">
-              <div>
-                  <label for="qualifyPos">Qualifying Position:</label>
-                  <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos"/>
-              </div>
-              <div>
-                  <label for ="teammateQuali">Out-qualified teammate?</label>  
-                  <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
-              </div>
-              <div>
-                  <label for="finishPos">Finishing Position:</label>
-                  <input required name="finishPos" type="number" min="1" max="22" id="finishPos"/>
-              </div>
-              <div>
-                  <label for ="teammateRace">Beat teammate?</label>  
-                  <input name="teammateRace" type="checkbox" id="teammateRace"/>
-              </div>
-            </form>  
-            <br>
-            <button onclick="driverPoints()">AWAY WE GO!</button>
-            <p id="points"></p>
-        </div>
-
-        <div>
-            <form id="predictionsForm">
-              <div>
-                  <label for="qualifyPos">Qualifying Position:</label>
-                  <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos"/>
-              </div>
-              <div>
-                  <label for ="teammateQuali">Out-qualified teammate?</label>  
-                  <input  name="teammateQuali" type="checkbox" id="teammateQuali"/>
-              </div>
-              <div>
-                  <label for="finishPos">Finishing Position:</label>
-                  <input required name="finishPos" type="number" min="1" max="22" id="finishPos"/>
-              </div>
-              <div>
-                  <label for ="teammateRace">Beat teammate?</label>  
-                  <input name="teammateRace" type="checkbox" id="teammateRace"/>
-              </div>
-            </form>  
-            <br>
-            <button onclick="driverPoints()">AWAY WE GO!</button>
-            <p id="points"></p>
-        </div>
-        
-
+        <p id="points"></p>
     </div>
 </body>
 </html>

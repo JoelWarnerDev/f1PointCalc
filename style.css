@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(31, 53, 119);
+}
+
+.calcGrid{
+    display: flex;
+    flex-wrap: wrap;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    justify-content: center;
+}
+
+.calcGrid div{
+    width: max-content;
+    background-color: rgb(33, 119, 168);
+    margin: 5px;
+    border-radius: 25px;
+}
+
+
+nav {
+    width:100%;
+    border: 2px solid #2d2d2d;
+    display:inline-flex;
+    justify-content: center;
+    background-color: rgb(54, 186, 209);
+}
+
+nav li{
+    display: inline;
+    padding-right: 20px;
+}
+
+
+.calcGrid header{
+    text-decoration: underline;
+    font-size:larger;
+    text-align: center;
+}
+
+.results{
+    text-align:center;
+}
+
+.results button{
+    padding: 0px 10px;
+    background-color: rgb(28, 187, 68);
+    font-family:fantasy;
+    border-radius: 10px;
+    border-color: rgb(28, 187, 68);
+}
+
+#points {
+    text-align: center;
+    color: rgb(220, 247, 247);
+    font-size:xx-large;
+}

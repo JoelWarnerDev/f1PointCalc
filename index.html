@@ -35,7 +35,7 @@
     <form id="predictionsForm">
       <div>
           <label for="qualifyPos">Qualifying Position:</label>
-          <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos"/>
+          <input required name="qualifyPos" type="number" min="1" max="22" id="qualifyPos" inputmode="numeric" pattern="[0-9]*"/>
       </div>
       <div>
           <label for ="teammateQuali">Out-qualified teammate?</label>  
@@ -43,7 +43,7 @@
       </div>
       <div>
           <label for="finishPos">Finishing Position:</label>
-          <input required name="finishPos" type="number" min="1" max="22" id="finishPos"/>
+          <input required name="finishPos" type="number" min="1" max="22" id="finishPos" inputmode="numeric" pattern="[0-9]*"/>
       </div>
       <div>
           <label for ="teammateRace">Beat teammate?</label>  
