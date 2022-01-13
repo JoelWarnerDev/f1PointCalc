@@ -119,5 +119,8 @@ var qualifyBooolean
     if (qualifyPos > 0 && qualifyPos < 11){
         runningTotal +=1;
     }
-    
+
+    //this line exclusively used for testing git functionality
+
 */
+
